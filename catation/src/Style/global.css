@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'bubble_shineregular';
+    src: url('../Assets/bubbleshine-webfont.woff') format('woff'),
+    url('../Assets/bubbleshine-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
