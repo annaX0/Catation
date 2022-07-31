@@ -1,7 +1,6 @@
 import logo  from '../../Assets/logo.png'
 import user  from '../../Assets/user.svg'
 import lock  from '../../Assets/lock.svg'
-
 import  '../Login/index.css'
 import { useRef } from 'react';
 
@@ -19,19 +18,24 @@ function Login() {
                     <div className="line1"></div>
                 </div>
 
-                <div>
-                    <label htmlFor="email">
-                        <img src={user}></img>
+                <div className='labelLogin'>
+                    <div className="email">
+                    <label htmlFor="email" className='label'>
+                        <img className='icon' src={user}></img>
+                        <input type={'email'} name='email' id='email' placeholder='Insira seu e-mail' />
                     </label>
-                    <input type={'email'} name='email' id='email' placeholder='Insira seu e-mail' />
-                    <label htmlFor="senha">
-                        <img src={lock}></img>
-                    </label>
+                   
+                    </div>
+                    <div className="senha">
+                    <label htmlFor="senha" className='label'>
+                        <img className='icon' src={lock}></img>
                         <input type={"password"} name='senha' id='senha' placeholder='Insira sua senha'/>
+                    </label>
+                        </div>
                     <button type={'submit'}>Login</button>
-                    <p>Esqueci minha senha</p>
-                    <div className="line1"></div>
-                    <h4>Ainda não tenho uma</h4><a href="">Conta</a>
+                    <a href="#">Esqueci minha senha</a>
+                    <div className="line2"></div>
+                    <h4>Ainda não tenho uma <a href="">Conta</a></h4>
                 </div>
             </div>
         </div>
