@@ -32,8 +32,8 @@ function Login() {
                         <input type={"password"} name='senha' id='senha' placeholder='Insira sua senha'/>
                     </label>
                         </div>
-                    <button type={'submit'}>Login</button>
-                    <a href="#">Esqueci minha senha</a>
+                    <button type={'submit'}><a href='./home'>Entrar</a></button>
+                    <a href="">Esqueci minha senha</a>
                     <div className="line2"></div>
                     <h4>Ainda não tenho uma <a href="">Conta</a></h4>
                 </div>
