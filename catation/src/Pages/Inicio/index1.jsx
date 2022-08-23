@@ -1,34 +1,45 @@
 import Header from "../../Components/header";
 import Gato from '../../Assets/willian.png'
+import Search from '../../Assets/search.png';
+import Doar from '../../Assets/doe.png';
+import '../Inicio/style.css'
+import Cards from "../../Components/cards";
+import Filter from '../../Assets/filter.png'
 
 function Home(){
         return(
             <div>
                 <Header></Header>
                 <div className="conteiner">
-                    {/* <input type="search" name="busca" id="" />
-                    <option value="filtro"></option> */}
-
-                    <div className="cards">
-                        <h3>Willian</h3>
-                        <img src={Gato}></img>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet quam beatae reprehenderit dolores ipsam laudantium pariatur doloribus nostrum, molestiae, amet accusantium saepe voluptas esse unde impedit. Impedit, aut corrupti!</p>
-                        <button>Adotar</button>
+                    <div className="buscar">
+                    <input type="search" name="busca" id="" /><img src={Search} alt="" srcset="" />
                     </div>
 
-                    <div className="cards">
-                        <h3>Willian</h3>
-                        <img src={Gato}></img>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet quam beatae reprehenderit dolores ipsam laudantium pariatur doloribus nostrum, molestiae, amet accusantium saepe voluptas esse unde impedit. Impedit, aut corrupti!</p>
-                        <button>Adotar</button>
+                    <div className="filter">
+                    <label for="filter">Filtro</label>
+                    <select name="filter" id="filter">
+                    <option value="Ordem alfabetica">Ordem Alfabética</option>
+                    <option value="Ordem alfabetica">Ordem Alfabética</option>
+                    <option value="Ordem alfabetica">Ordem Alfabética</option>
+                    </select>
+                    
+                    <img src={Filter} alt="" />
                     </div>
+                    <Cards 
+                    nome="Willian" 
+                    foto={Gato}
+                    ></Cards>
 
-                    <div className="cards">
-                        <h3>Willian</h3>
-                        <img src={Gato}></img>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet quam beatae reprehenderit dolores ipsam laudantium pariatur doloribus nostrum, molestiae, amet accusantium saepe voluptas esse unde impedit. Impedit, aut corrupti!</p>
-                        <button>Adotar</button>
-                    </div>
+                    <Cards 
+                    nome="Bolinho" 
+                    foto={Gato}
+                    ></Cards>
+
+                    <Cards 
+                    nome="Cloe" 
+                    foto={Gato}
+                    ></Cards>
+
                 </div>
             </div>
         )

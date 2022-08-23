@@ -1,0 +1,34 @@
+.cards{
+    color: white;
+    border: 3px solid #841FA5 ;
+    border-radius: 10px;
+    margin: 3vh 15vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.cards h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+.cards p{
+    font-weight: 200;
+}
+.cards img{
+    max-width: 25vw;
+    max-height: 40vh;
+}
+.nome{
+    margin: 5%;
+}
+.IconDoar{
+    display: flex;
+    justify-content: end;
+}
+.cards button{
+    border: 3px solid #910783;
+    background-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1%;
+}

@@ -4,6 +4,7 @@ import lock  from '../../Assets/lock.svg'
 import  '../Login/index.css'
 import { useRef } from 'react';
 
+
 function Login() {
     return (
         <div className="container">
@@ -33,6 +34,7 @@ function Login() {
                     </label>
                         </div>
                     <button type={'submit'}><a href='./home'>Entrar</a></button>
+                    <button type={'submit'}><a href='./home'>Entrar com google</a></button>
                     <a href="">Esqueci minha senha</a>
                     <div className="line2"></div>
                     <h4>Ainda não tenho uma <a href="">Conta</a></h4>
